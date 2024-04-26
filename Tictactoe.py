@@ -1,7 +1,8 @@
 """
 @author: Asia Harris
-Discrete Structures CS 20...
-Tictactoe project to show the ....
+Discrete Structures, CS 203, Spring 2024
+Tictactoe project to show the demonstrate principles in discrete structures. Specifically, it will use the
+rules of inferences for the limited winning outcomes of the game. 
 """
 #Prints every element in the board in a grid layout
 def print_board(board):
@@ -10,7 +11,7 @@ def print_board(board):
 #Will check for winner, both lateral and diagonal wins
 def check_winner(board, move):
     for i in range(3):
-        #Checking for lateral wins
+        #Checking for row and column wins
         if ((board[i][0] == board[i][1] == board[i][2] == move) or (board[0][i] == board[1][i] == board[2][i] == move)):
             return True
         #Checking for diagonal wins
